@@ -1,0 +1,9 @@
+<library path="my_robot_hardware">
+    <class name="Arm_hardware::ArmHardwareInterface"
+           type="Arm_hardware::ArmHardwareInterface"
+           base_class_type="hardware_interface::SystemInterface">
+           <description>
+                Hardware interface 4 dynamixel motors
+           </description>
+    </class>
+</library>

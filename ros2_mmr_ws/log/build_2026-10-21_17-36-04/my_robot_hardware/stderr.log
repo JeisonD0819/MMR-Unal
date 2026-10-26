@@ -1,0 +1,4 @@
+[31mCMake Error at CMakeLists.txt:26 (amen_target_dependecies):
+  Unknown CMake command "amen_target_dependecies".
+
+[0m

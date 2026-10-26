@@ -1,0 +1,8 @@
+In file included from [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:1[m[K:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Khardware_interface/system_interface: No such file or directory
+    4 | #include [01;31m[K"hardware_interface/system_interface"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/my_robot_hardware.dir/build.make:76: CMakeFiles/my_robot_hardware.dir/src/arm_hardware_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,49 @@
+[0.009s] Invoking command in '/home/jeisond/ros2_mmr_ws/build/my_robot_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jeisond/ros2_mmr_ws/build/my_robot_hardware -- -j8 -l8
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/my_robot_hardware.dir/src/arm_hardware_interface.cpp.o[0m
+[1.759s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn Arm_hardware::ArmHardwareInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[1.759s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:8:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+[1.759s]     8 | [01;35m[KtemInterface::on_init(info)[m[K !=
+[1.759s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.760s] 
+[1.760s] In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+[1.760s]                  from [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.hpp:4[m[K,
+[1.760s]                  from [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:1[m[K:
+[1.760s] [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+[1.760s]   140 | ual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+[1.760s]       |                    [01;36m[K^~~~~~~[m[K
+[1.760s] 
+[1.765s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn Arm_hardware::ArmHardwareInterface::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’:
+[1.765s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:43:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kperiod[m[K’ was not declared in this scope; did you mean ‘[01m[Kperror[m[K’?
+[1.765s]    43 |     (void) [01;31m[Kperiod[m[K;
+[1.765s]       |            [01;31m[K^~~~~~[m[K
+[1.765s]       |            [32m[Kperror[m[K
+[1.765s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type Arm_hardware::ArmHardwareInterface::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.765s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:66:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[1.765s]    66 | [01;35m[Knst rclcpp::Duration & period[m[K)
+[1.765s]       | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[1.765s] 
+[1.770s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::return_type Arm_hardware::ArmHardwareInterface::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[1.770s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint1[m[K’ was not declared in this scope
+[1.770s]    85 | or_id, get_command([01;31m[Karm_joint1[m[K/position));
+[1.770s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[1.770s] 
+[1.774s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ was not declared in this scope
+[1.774s]    85 | command(arm_joint1/[01;31m[Kposition[m[K));
+[1.774s]       |                    [01;31m[K^~~~~~~~[m[K
+[1.774s] 
+[1.779s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:86:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint2[m[K’ was not declared in this scope
+[1.779s]    86 | or_id, get_command([01;31m[Karm_joint2[m[K/position));
+[1.779s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[1.779s] 
+[1.783s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:87:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint3[m[K’ was not declared in this scope
+[1.783s]    87 | or_id, get_command([01;31m[Karm_joint3[m[K/position));
+[1.783s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[1.783s] 
+[1.788s] [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:88:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint4[m[K’ was not declared in this scope
+[1.788s]    88 | or_id, get_command([01;31m[Karm_joint4[m[K/position));
+[1.788s]       |                    [01;31m[K^~~~~~~~~~[m[K
+[1.788s] 
+[2.737s] gmake[2]: *** [CMakeFiles/my_robot_hardware.dir/build.make:76: CMakeFiles/my_robot_hardware.dir/src/arm_hardware_interface.cpp.o] Error 1
+[2.737s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_hardware.dir/all] Error 2
+[2.737s] gmake: *** [Makefile:146: all] Error 2
+[2.738s] Invoked command in '/home/jeisond/ros2_mmr_ws/build/my_robot_hardware' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jeisond/ros2_mmr_ws/build/my_robot_hardware -- -j8 -l8

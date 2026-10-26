@@ -1,0 +1,20 @@
+[0.009s] Invoking command in '/home/jeisond/ros2_mmr_ws/build/my_robot_hardware': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jeisond/ros2_mmr_ws/src/my_robot_hardware -DCMAKE_INSTALL_PREFIX=/home/jeisond/ros2_mmr_ws/install/my_robot_hardware
+[0.018s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.165s] -- Found rclcpp: 28.1.22 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.181s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.187s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.203s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.243s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.244s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.285s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.331s] -- Found rclcpp_lifecycle: 28.1.22 (/opt/ros/jazzy/share/rclcpp_lifecycle/cmake)
+[0.349s] -- Found pluginlib: 5.4.6 (/opt/ros/jazzy/share/pluginlib/cmake)
+[0.352s] -- Found hardware_interface: 4.48.1 (/opt/ros/jazzy/share/hardware_interface/cmake)
+[0.492s] -- Found dynamixel_sdk: 4.0.3 (/opt/ros/jazzy/share/dynamixel_sdk/cmake)
+[0.493s] [31mCMake Error at CMakeLists.txt:26 (amen_target_dependecies):
+[0.493s]   Unknown CMake command "amen_target_dependecies".
+[0.493s] 
+[0.493s] [0m
+[0.493s] -- Configuring incomplete, errors occurred!
+[0.500s] Invoked command in '/home/jeisond/ros2_mmr_ws/build/my_robot_hardware' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/jeisond/ros2_mmr_ws/src/my_robot_hardware -DCMAKE_INSTALL_PREFIX=/home/jeisond/ros2_mmr_ws/install/my_robot_hardware

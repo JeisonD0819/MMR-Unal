@@ -1,0 +1,165 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_robot_hardware.dir/src/arm_hardware_interface.cpp.o[0m
+In file included from [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:1[m[K:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.hpp:49:2:[m[K [01;31m[Kerror: [m[K#endif without #if
+   49 | #[01;31m[Kendif[m[K
+      |  [01;31m[K^~~~~[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In member function ‘[01m[Kvirtual hardware_interface::CallbackReturn Arm_hardware::ArmHardwareInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:8:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvirtual rclcpp_lifecycle::node_interfaces::LifecycleNodeInterface::CallbackReturn hardware_interface::HardwareComponentInterface::[01;32m[Kon_init[m[K(const hardware_interface::HardwareInfo&)[m[K’ is deprecated: Use on_init(const HardwareComponentInterfaceParams & params) instead. [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdeprecated-declarations-Wdeprecated-declarations]8;;[m[K]
+    8 | [01;35m[KtemInterface::on_init(info)[m[K !=
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+In file included from [01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/system_interface.hpp:18[m[K,
+                 from [01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/include/my_robot_hardware/arm_hardware_interface.hpp:4[m[K:
+[01m[K/opt/ros/jazzy/include/hardware_interface/hardware_interface/hardware_component_interface.hpp:140:26:[m[K [01;36m[Knote: [m[Kdeclared here
+  140 | ual CallbackReturn [01;36m[Kon_init[m[K(const HardwareInfo & hardware_info);
+      |                    [01;36m[K^~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K At global scope:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:28:36:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileBaseHardwareInterface[m[K’ has not been declared
+   28 | ce::CallbackReturn [01;31m[KMobileBaseHardwareInterface[m[K::on_configure
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In function ‘[01m[Khardware_interface::CallbackReturn Arm_hardware::[01;32m[Kon_configure[m[K(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:32:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kdriver_[m[K’ was not declared in this scope
+   32 |     if ([01;31m[Kdriver_[m[K->init() !=0) {
+      |         [01;31m[K^~~~~~~[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K At global scope:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:39:36:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileBaseHardwareInterface[m[K’ has not been declared
+   39 | ce::CallbackReturn [01;31m[KMobileBaseHardwareInterface[m[K::on_activate
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In function ‘[01m[Khardware_interface::CallbackReturn Arm_hardware::[01;32m[Kon_activate[m[K(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:43:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kperiod[m[K’ was not declared in this scope; did you mean ‘[01m[Kperror[m[K’?
+   43 |     (void) [01;31m[Kperiod[m[K;
+      |            [01;31m[K^~~~~~[m[K
+      |            [32m[Kperror[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:45:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdriver_[m[K’ was not declared in this scope
+   45 |     [01;31m[Kdriver_[m[K -> activateWithPositionMode(joint1_motor_id);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:45:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint1_motor_id[m[K’ was not declared in this scope
+   45 | teWithPositionMode([01;31m[Kjoint1_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:46:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint2_motor_id[m[K’ was not declared in this scope
+   46 | teWithPositionMode([01;31m[Kjoint2_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:47:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint3_motor_id[m[K’ was not declared in this scope
+   47 | teWithPositionMode([01;31m[Kjoint3_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:48:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint4_motor_id[m[K’ was not declared in this scope
+   48 | teWithPositionMode([01;31m[Kjoint4_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K At global scope:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:53:36:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileBaseHardwareInterface[m[K’ has not been declared
+   53 | ce::CallbackReturn [01;31m[KMobileBaseHardwareInterface[m[K::on_deactivate
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In function ‘[01m[Khardware_interface::CallbackReturn Arm_hardware::[01;32m[Kon_deactivate[m[K(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:57:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdriver_[m[K’ was not declared in this scope
+   57 |     [01;31m[Kdriver_[m[K ->deactivate(joint1_motor_id);
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:57:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint1_motor_id[m[K’ was not declared in this scope
+   57 | iver_ ->deactivate([01;31m[Kjoint1_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:58:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint2_motor_id[m[K’ was not declared in this scope
+   58 | iver_ ->deactivate([01;31m[Kjoint2_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:59:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint3_motor_id[m[K’ was not declared in this scope
+   59 | iver_ ->deactivate([01;31m[Kjoint3_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:60:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint4_motor_id[m[K’ was not declared in this scope
+   60 | iver_ ->deactivate([01;31m[Kjoint4_motor_id[m[K);
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K At global scope:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:65:33:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileBaseHardwareInterface[m[K’ has not been declared
+   65 | rface::return_type [01;31m[KMobileBaseHardwareInterface[m[K::read
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type Arm_hardware::[01;32m[Kread[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:70:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kdriver_[m[K’ was not declared in this scope
+   70 | m_joint1/position",[01;31m[Kdriver_[m[K-> getPositionRadian(joint1_motor_id));
+      |                    [01;31m[K^~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:70:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint1_motor_id[m[K’ was not declared in this scope
+   70 |  getPositionRadian([01;31m[Kjoint1_motor_id[m[K));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_state[m[K’ was not declared in this scope; did you mean ‘[01m[Ksetstate[m[K’?
+   70 |     [01;31m[Kset_state[m[K("arm_joint1/position",driver_-> getPositionRadian(joint1_motor_id));
+      |     [01;31m[K^~~~~~~~~[m[K
+      |     [32m[Ksetstate[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:71:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint2_motor_id[m[K’ was not declared in this scope
+   71 |  getPositionRadian([01;31m[Kjoint2_motor_id[m[K));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:72:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint3_motor_id[m[K’ was not declared in this scope
+   72 |  getPositionRadian([01;31m[Kjoint3_motor_id[m[K));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:73:65:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint4_motor_id[m[K’ was not declared in this scope
+   73 |  getPositionRadian([01;31m[Kjoint4_motor_id[m[K));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:66:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   66 | [01;35m[Knst rclcpp::Duration & period[m[K)
+      | [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K At global scope:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:79:33:[m[K [01;31m[Kerror: [m[K‘[01m[KMobileBaseHardwareInterface[m[K’ has not been declared
+   79 | rface::return_type [01;31m[KMobileBaseHardwareInterface[m[K::write
+      |                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type Arm_hardware::[01;32m[Kwrite[m[K(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdriver_[m[K’ was not declared in this scope
+   85 |     [01;31m[Kdriver_[m[K -> setTargetPositionRadian(joint1_motor_id, get_command(arm_joint1/position));
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint1_motor_id[m[K’ was not declared in this scope
+   85 | rgetPositionRadian([01;31m[Kjoint1_motor_id[m[K, get_command(arm_joint1/position));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint1[m[K’ was not declared in this scope
+   85 | or_id, get_command([01;31m[Karm_joint1[m[K/position));
+      |                    [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:80:[m[K [01;31m[Kerror: [m[K‘[01m[Kposition[m[K’ was not declared in this scope
+   85 | command(arm_joint1/[01;31m[Kposition[m[K));
+      |                    [01;31m[K^~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:85:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_command[m[K’ was not declared in this scope
+   85 | n(joint1_motor_id, [01;31m[Kget_command[m[K(arm_joint1/position));
+      |                    [01;31m[K^~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:86:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint2_motor_id[m[K’ was not declared in this scope
+   86 | rgetPositionRadian([01;31m[Kjoint2_motor_id[m[K, get_command(arm_joint2/position));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:86:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint2[m[K’ was not declared in this scope
+   86 | or_id, get_command([01;31m[Karm_joint2[m[K/position));
+      |                    [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:87:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint3_motor_id[m[K’ was not declared in this scope
+   87 | rgetPositionRadian([01;31m[Kjoint3_motor_id[m[K, get_command(arm_joint3/position));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:87:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint3[m[K’ was not declared in this scope
+   87 | or_id, get_command([01;31m[Karm_joint3[m[K/position));
+      |                    [01;31m[K^~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:88:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint4_motor_id[m[K’ was not declared in this scope
+   88 | rgetPositionRadian([01;31m[Kjoint4_motor_id[m[K, get_command(arm_joint4/position));
+      |                    [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/jeisond/ros2_mmr_ws/src/my_robot_hardware/src/arm_hardware_interface.cpp:88:69:[m[K [01;31m[Kerror: [m[K‘[01m[Karm_joint4[m[K’ was not declared in this scope
+   88 | or_id, get_command([01;31m[Karm_joint4[m[K/position));
+      |                    [01;31m[K^~~~~~~~~~[m[K
+
+gmake[2]: *** [CMakeFiles/my_robot_hardware.dir/build.make:76: CMakeFiles/my_robot_hardware.dir/src/arm_hardware_interface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_robot_hardware.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
